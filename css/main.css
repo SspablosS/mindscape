@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+@font-face {
+  font-family: kronaone-c;
+  src: url(../fonts/KronaOne-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: kronaone-c;
+}
+
+body {
+  background-color: #FFEFDF;
+  color: #450D01;
+  font-family: kronaone-c;
+  overflow: hidden;
+}
+
+.home-page-header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFEFDF;
+  padding: 3vh;
+  color: #450D01;
+}
+
+.logo > a{
+  font-size: calc(var(--index) * 2);
+  font-family: kronaone-c;
+  margin-left: 3vw;
+  color: #0428E4;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item > a {
+  margin-right: 4vw;
+  font-size: calc(var(--index) * 1);
+  font-family: kronaone-c;
+  color: #450D01;
+  text-decoration: none;
+}
+
+.hero {
+  width: calc(var(--index) * 32);
+  position: absolute;
+  left: 55vw;
+  bottom: 0vh;
+}
+
+.main-header {
+  height: 100vh;
+}
+
+.container {
+  padding: 0 4vw;
+}
+
+.tagline {
+  font-size: calc(var(--index) * 3.5);
+  position: absolute;
+  width: min-content;
+  top: 20vh;
+  left: 4vw;
+  line-height: 1.2;
+}
+
+.note_button > button {
+  font-family: kronaone-c;
+  font-size: calc(var(--index) * 4);
+  position: absolute;
+  bottom: 3vh;
+  outline: none;
+  border: none;
+  padding: 2vh 8vw;
+  border-radius: 15vw;
+  background-color: #0E81EA;
+  color: white;
+  cursor: pointer;
+}
