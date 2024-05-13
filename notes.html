@@ -3,9 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Note</title>
+  <link rel="stylesheet" href="css/notes.css">
 </head>
 <body>
   
+<div class="container">
+  <div class="sidebar">
+    <button class='add-note-button' onclick="addNote()">+</button>
+    <ul>
+    </ul>
+  </div>
+  <div class="content">
+  </div>
+</div>
+
+<script>
+  function changeTab(tabIndex) {
+    var tabs = document.querySelectorAll('.tab-content');
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].classList.remove('active');
+    }
+    tabs[tabIndex].classList.add('active');
+  }
+
+  function addNote() {
+    var tabsContainer = document.querySelector('.sidebar ul');
+    var contentContainer = document.querySelector('.content');
+
+    var newTabIndex = document.querySelectorAll('.sidebar ul li').length;
+    var newNoteTab = document.createElement('li');
+    newNoteTab.textContent = 'Заметка ' + newTabIndex;
+    newNoteTab.setAttribute('onclick', 'changeTab(' + newTabIndex + ')');
+    newNoteTab.id = 'tab' + newTabIndex;
+    tabsContainer.appendChild(newNoteTab);
+
+    var newNoteContent = document.createElement('div');
+    newNoteContent.classList.add('tab-content');
+    newNoteContent.textContent = 'Содержимое заметки ' + newTabIndex;
+    newNoteContent.id = 'tab' + newTabIndex + 'Content';
+    contentContainer.appendChild(newNoteContent);
+  }
+</script>
+
 </body>
 </html>
