@@ -29,17 +29,22 @@ body {
 
 .container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar {
+  margin-left: 1vw;
+  margin-top: 1vh;
+  border-radius: 15px;
   width: 13vw;
   background-color: #202020;
   color: #9B9B9B;
   padding: 1.5vw;
+  margin: 1vh;
 }
 
 .sidebar ul {
+  margin-top: 1.5vh;
   list-style: none;
   padding: 0;
 }
@@ -57,6 +62,9 @@ body {
 .content {
   flex: 1;
   padding: 20px;
+  margin: 1vh;
+  border-radius: 15px;
+  background-color: #202020;
 }
 
 .tab-content {
@@ -79,5 +87,17 @@ body {
   background: #2c2c2c;
   color: #9B9B9B;
   border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.search-note-button {
+  width: 100%;
+  padding: 5px 20px;
+  cursor: pointer;
+  border: none;
+  background: #2c2c2c;
+  color: #9B9B9B;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 

@@ -11,6 +11,7 @@
 <div class="container">
   <div class="sidebar">
     <button class='add-note-button' onclick="addNote()">+</button>
+    <button class='search-note-button'>Search</button>
     <ul>
     </ul>
   </div>
@@ -33,14 +34,14 @@
 
     var newTabIndex = document.querySelectorAll('.sidebar ul li').length;
     var newNoteTab = document.createElement('li');
-    newNoteTab.textContent = 'Заметка ' + newTabIndex;
+    newNoteTab.textContent = prompt('Название', 'Untitled' );
     newNoteTab.setAttribute('onclick', 'changeTab(' + newTabIndex + ')');
     newNoteTab.id = 'tab' + newTabIndex;
     tabsContainer.appendChild(newNoteTab);
 
     var newNoteContent = document.createElement('div');
     newNoteContent.classList.add('tab-content');
-    newNoteContent.textContent = 'Содержимое заметки ' + newTabIndex;
+    newNoteContent.textContent = 'Содержимое заметки ' + newNoteTab.textContent;
     newNoteContent.id = 'tab' + newTabIndex + 'Content';
     contentContainer.appendChild(newNoteContent);
   }
