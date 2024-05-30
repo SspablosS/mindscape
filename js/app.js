@@ -38,6 +38,7 @@ const addNote = () => {
 
   const textarea = document.createElement('textarea');
   textarea.classList.add('notes-textarea');
+  textarea.setAttribute('placeholder', 'Напишите что-нибудь'); // Установка значения по умолчанию
   textarea.addEventListener('input', () => {
     saveNoteContent(newTabIndex);
   });
