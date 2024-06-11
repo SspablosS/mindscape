@@ -3,7 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,body {
+  height:1000px;
+  font-size: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x:hidden;
+  background: #ccc;
 
+}
 :root {
   --index: calc(1vw + 1vh);
 }
@@ -27,6 +35,7 @@ body {
   color: #450D01;
   font-family: kronaone-c;
   overflow: hidden;
+  
 }
 
 .home-page-header {
@@ -67,7 +76,7 @@ body {
 }
 
 .main-header {
-  height: 100vh;
+  height: 70vh;
 }
 
 .container {
@@ -86,7 +95,6 @@ body {
 .note_button > button {
   font-family: kronaone-c;
   font-size: calc(var(--index) * 4);
-  position: absolute;
   bottom: 3vh;
   outline: none;
   border: none;
@@ -94,5 +102,22 @@ body {
   border-radius: 15vw;
   background-color: #0E81EA;
   color: white;
-  cursor: pointer;
+  cursor: pointer; 
+  width: 500px;
+}
+.calendar_button > button {
+  font-family: kronaone-c;
+  font-size: calc(var(--index) * 4);
+  bottom: 3vh;
+  outline: none;
+  border: none;
+  padding: 2vh 8vw;
+  border-radius: 15vw;
+  background-color: #0E81EA;
+  color: white;
+  cursor: pointer;  
+  width: 500px;
+}
+.blank{
+  height: 70vh;
 }
