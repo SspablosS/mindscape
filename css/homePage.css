@@ -81,6 +81,8 @@ body {
 
 .container {
   padding: 0 4vw;
+  
+  
 }
 
 .tagline {
@@ -103,7 +105,9 @@ body {
   background-color: #0E81EA;
   color: white;
   cursor: pointer; 
-  width: 500px;
+  width: 80vh;
+  position: absolute;
+  margin-bottom: 40vh;
 }
 .calendar_button > button {
   font-family: kronaone-c;
@@ -116,8 +120,16 @@ body {
   background-color: #0E81EA;
   color: white;
   cursor: pointer;  
-  width: 500px;
+  position: absolute;
+  margin-bottom: 20vh;
+  width: 80vh;
 }
 .blank{
   height: 70vh;
+  margin-top: 100px;
+  position: absolute;
+
+}
+.flex{ 
+  display: flex;
 }
