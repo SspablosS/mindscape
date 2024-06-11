@@ -853,3 +853,13 @@ body {
     width: 100%;
   }
 }
+.footerbase{
+  /* Позиционируем footer внизу main */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Высота footer */
+  height: 40px;
+  background: #2d2d2d;
+  padding-top: 40px;
+}

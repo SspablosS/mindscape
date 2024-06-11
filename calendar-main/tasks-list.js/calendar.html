@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Календарь задач</title>
     <link rel="stylesheet" href="libs/uikit.css">
     <script src="libs/uikit.js"></script>
@@ -25,8 +26,21 @@
             text-decoration: line-through;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <header class= 'home-page-header'>
+        <div class='logo'><a href="../../index.html">MindScape</a></div>
+      
+        <nav class='menu'>
+          <div class="menu-item"><a href="">Products</a></div>
+          <div class="menu-item"><a href="../../aboutUspage/aboutUs.html">About Us</a></div>
+          <div class="menu-item"><a href="">Get Started</a></div>
+        </nav>
+      </header>
     <div id="app" class="uk-container uk-container-large">
         <calendar :date="calendarDate" :tasks="tasks"></calendar>
         <task-form :new-task="newTask" :edit-task="editTask"></task-form>
@@ -153,4 +167,5 @@
     <script src="components/calendar.js"></script>
     <script src="app.js"></script>
 </body>
+<footer class="footerbase"></footer>
 </html>

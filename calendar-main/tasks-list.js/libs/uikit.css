@@ -17,14 +17,22 @@
     /* 2 */
     -webkit-text-size-adjust: 100%;
     /* 3 */
-    background: #fff;
-    color: #666;
+    position: relative;
+    overflow-x:hidden;
+
+
+
   }
+ 
+  
   /*
    * Remove the margin in all browsers.
    */
   body {
     margin: 0;
+    position: relative;
+  overflow-x:hidden;
+
   }
   /* Links
    ========================================================================== */
@@ -2390,7 +2398,7 @@
     display: flow-root;
     /* 1 */
     box-sizing: content-box;
-    max-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -12574,3 +12582,52 @@
       page-break-after: avoid;
     }
   }
+  .krona-one-regular {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .home-page-header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5vh;
+    color: #450D01;
+    
+  }
+  
+  .logo > a{
+    font-size: calc(var(--index) * 2);
+    font-family: "Krona One", sans-serif;
+    margin-left: 3vw;
+    color: #0428E4;
+    text-decoration: none;
+   
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu-item > a {
+    margin-right: 4vw;
+    font-size: calc(var(--index) * 1);
+    font-family: "Krona One", sans-serif;
+    color: #450D01;
+    text-decoration: none;
+  }
+  .footerbase{
+    /* Позиционируем footer внизу main */
+
+    bottom: 0;
+    width: 100%;
+    /* Высота footer */
+    height: 40px;
+    background: #2d2d2d;
+    margin-top: 30px;
+    padding-top: 50px;
+ }
+  
