@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,body {
+    height:1000px;
+    font-size: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x:hidden;
+    background: #ccc;
+    background-image: url('../../assets/images/bckgprojects.jpg');
+    background-size: 100vw 100%;
+    background-repeat:no-repeat;
+  }
+  :root {
+    --index: calc(1vw + 1vh);
+  }
+  
+  @font-face {
+    font-family: kronaone-c;
+    src: url(../fonts/KronaOne-Regular.ttf);
+  }
+  
+  h1,
+  h2,
+  h4,
+  h5,
+  h6 {
+    font-family: kronaone-c;
+  }
+  
+  body {
+    background-color: #FFEFDF;
+    color: #450D01;
+    font-family: kronaone-c;
+    overflow: hidden;
+    
+  }
+  body > .box1{
+    margin-top: 1vh;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-left: 60vh;
+    padding-right: 30vh;
+    
+}
+  
+  .home-page-header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3vh;
+    color: #450D01;
+  }
+  
+  .logo > a{
+    font-size: calc(var(--index) * 2);
+    font-family: kronaone-c;
+    margin-left: 3vw;
+    color: #0428E4;
+    text-decoration: none;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu-item > a {
+    margin-right: 4vw;
+    font-size: calc(var(--index) * 1);
+    font-family: kronaone-c;
+    color: #450D01;
+    text-decoration: none;
+  }
+  
+  .hero {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 55vw;
+    bottom: 5vh;
+  }
+  
+  .main-header {
+    height: 70vh;
+  }
+  
+  .container {
+    padding: 0 4vw;
+    
+    
+  }
+  
+  .tagline {
+    font-size: 80px;
+    position: absolute;
+    width: 120vh;
+    top: 20vh;
+    left: 5vw;
+    line-height: 1.2;
+    margin-left: 11vh;
+  }
+  
+  .note_button > button {
+    font-family: kronaone-c;
+    font-size: calc(var(--index) * 4);
+    bottom: 3vh;
+    outline: none;
+    border: none;
+    padding: 2vh 8vw;
+    border-radius: 15vw;
+    background-color: #0E81EA;
+    color: white;
+    cursor: pointer; 
+    width: 80vh;
+    position: absolute;
+    margin-bottom: 40vh;
+    margin-left: 10vh;
+  }
+  .calendar_button > button {
+    font-family: kronaone-c;
+    font-size: calc(var(--index) * 4);
+    bottom: 3vh;
+    outline: none;
+    border: none;
+    padding: 2vh 8vw;
+    border-radius: 15vw;
+    background-color: #0E81EA;
+    color: white;
+    cursor: pointer;  
+    position: absolute;
+    margin-bottom: 20vh;
+    margin-left: 10vh;
+    width: 80vh;
+  }
+  .blank{
+    height: 70vh;
+    margin-top: 100px;
+    position: absolute;
+  
+  }
+  .flex{ 
+    display: flex;
+  }
+  .ideaText{
+    padding-right: 90vh;
+    position: absolute;
+    margin-top: 40vh;
+  }
+  .footerbase{
+     /* Позиционируем footer внизу main */
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     /* Высота footer */
+     height: 40px;
+     background: #2d2d2d;
+     padding-top: 40px;
+  }
+  .img1{
+    height: 300px;
+    width: 300px;
+    margin-left: 100vh;
+    margin-top: 5vh;
+  }
