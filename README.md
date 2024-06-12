@@ -41,3 +41,9 @@ loadNotes(); // Загружает заметки из локального хр
 ```
 
 ### Также обновлены некоторые [стили](https://github.com/SspablosS/mindscape/blob/main/css/notes.css) заметок
+
+## Изменения
+
+### 12.06.24
+
+Добавлено AboutUs, Календарь

@@ -3,7 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,body {
+  height:1000px;
+  font-size: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x:hidden;
+  background: #ccc;
 
+}
 :root {
   --index: calc(1vw + 1vh);
 }
@@ -27,6 +35,7 @@ body {
   color: #450D01;
   font-family: kronaone-c;
   overflow: hidden;
+  
 }
 
 .home-page-header {
@@ -60,33 +69,36 @@ body {
 }
 
 .hero {
-  width: calc(var(--index) * 32);
+  width: 800px;
+  height: 800px;
   position: absolute;
   left: 55vw;
-  bottom: 0vh;
+  bottom: 5vh;
 }
 
 .main-header {
-  height: 100vh;
+  height: 70vh;
 }
 
 .container {
   padding: 0 4vw;
+  
+  
 }
 
 .tagline {
-  font-size: calc(var(--index) * 3.5);
+  font-size: 80px;
   position: absolute;
-  width: min-content;
+  width: 120vh;
   top: 20vh;
-  left: 4vw;
+  left: 5vw;
   line-height: 1.2;
+  margin-left: 11vh;
 }
 
 .note_button > button {
   font-family: kronaone-c;
   font-size: calc(var(--index) * 4);
-  position: absolute;
   bottom: 3vh;
   outline: none;
   border: none;
@@ -94,5 +106,49 @@ body {
   border-radius: 15vw;
   background-color: #0E81EA;
   color: white;
-  cursor: pointer;
+  cursor: pointer; 
+  width: 80vh;
+  position: absolute;
+  margin-bottom: 40vh;
+  margin-left: 10vh;
+}
+.calendar_button > button {
+  font-family: kronaone-c;
+  font-size: calc(var(--index) * 4);
+  bottom: 3vh;
+  outline: none;
+  border: none;
+  padding: 2vh 8vw;
+  border-radius: 15vw;
+  background-color: #0E81EA;
+  color: white;
+  cursor: pointer;  
+  position: absolute;
+  margin-bottom: 20vh;
+  margin-left: 10vh;
+  width: 80vh;
+}
+.blank{
+  height: 70vh;
+  margin-top: 100px;
+  position: absolute;
+
+}
+.flex{ 
+  display: flex;
+}
+.ideaText{
+  padding-right: 90vh;
+  position: absolute;
+  margin-top: 40vh;
+}
+.footerbase{
+   /* Позиционируем footer внизу main */
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Высота footer */
+   height: 40px;
+   background: #2d2d2d;
+   padding-top: 40px;
 }
