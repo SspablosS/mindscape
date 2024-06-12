@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Календарь задач</title>
     <link rel="stylesheet" href="libs/uikit.css">
     <script src="libs/uikit.js"></script>
@@ -29,18 +30,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    
+
 </head>
+
 <body>
-    <header class= 'home-page-header'>
-        <div class='logo'><a href="../../index.html">MindScape</a></div>
-      
+    <header class='home-page-header'>
+        <div class='logo'><a href="../../../../index.html">MindScape</a></div>
+
         <nav class='menu'>
-          <div class="menu-item"><a href="">Products</a></div>
-          <div class="menu-item"><a href="../../aboutUspage/aboutUs.html">About Us</a></div>
-          <div class="menu-item"><a href="">Get Started</a></div>
+            <div class="menu-item"><a href="">Products</a></div>
+            <div class="menu-item"><a href="../../../../about.html">About Us</a></div>
+            <div class="menu-item"><a href="">Get Started</a></div>
         </nav>
-      </header>
+    </header>
     <div id="app" class="uk-container uk-container-large">
         <calendar :date="calendarDate" :tasks="tasks"></calendar>
         <task-form :new-task="newTask" :edit-task="editTask"></task-form>
@@ -59,14 +61,17 @@
 
     <template id="calendarSelectorTpl">
         <div class="uk-width-1-3 uk-margin-small-top">
-            <a class="uk-icon-button uk-margin-small-right" uk-icon="list" @click.prevent="$state.showTasks = [...$state.tasks]"></a>
+            <a class="uk-icon-button uk-margin-small-right" uk-icon="list"
+                @click.prevent="$state.showTasks = [...$state.tasks]"></a>
 
             <button class="uk-margin-small-right" uk-icon="chevron-left" @click="prevMonth"></button>
-            <span class="uk-text-bold uk-text-center uk-text-uppercase uk-width-1-6 uk-inline-block">{{getMonthTitle()}}</span>
+            <span
+                class="uk-text-bold uk-text-center uk-text-uppercase uk-width-1-6 uk-inline-block">{{getMonthTitle()}}</span>
             <button class="uk-margin-small-left" uk-icon="chevron-right" @click="nextMonth"></button>
 
             <button class="uk-margin-small-right" uk-icon="chevron-left" @click="prevYear"></button>
-            <span class="uk-text-bold uk-text-center uk-text-uppercase uk-width-1-6 uk-inline-block">{{getYear()}}</span>
+            <span
+                class="uk-text-bold uk-text-center uk-text-uppercase uk-width-1-6 uk-inline-block">{{getYear()}}</span>
             <button class="uk-margin-small-left" uk-icon="chevron-right" @click="nextYear"></button>
         </div>
     </template>
@@ -83,7 +88,8 @@
                 <ul class="uk-list">
                     <li v-for="task in limitTasks()">
                         <div class="uk-text-truncate">
-                            <a :title="task.title" :class="getTitleClasses(task)" @click.prevent="$state.setEditTask(task)">{{task.title}}</a>
+                            <a :title="task.title" :class="getTitleClasses(task)"
+                                @click.prevent="$state.setEditTask(task)">{{task.title}}</a>
                         </div>
                     </li>
                     <li class="show-all-tasks" v-if="tasks.length > maxTasks">
@@ -113,25 +119,31 @@
                         <div class="uk-margin">
                             <label class="uk-form-label" for="task-description">Описание задачи</label>
                             <div class="uk-form-controls">
-                                <textarea class="uk-textarea" id="task-description" v-model="formModel.description"></textarea>
+                                <textarea class="uk-textarea" id="task-description"
+                                    v-model="formModel.description"></textarea>
                             </div>
                         </div>
 
                         <div class="uk-margin">
                             <label class="uk-form-label" for="task-date">Дата исполнения</label>
                             <div class="uk-form-controls">
-                                <input type="date" class="uk-input uk-width-1-2" id="task-date" required v-model="formModel.date">
-                                <input type="number" min="0" max="23" class="uk-input uk-width-1-4" required v-model="formModel.hours">
-                                <input type="number" min="0" max="59" class="uk-input uk-width-1-4" required v-model="formModel.minutes">
+                                <input type="date" class="uk-input uk-width-1-2" id="task-date" required
+                                    v-model="formModel.date">
+                                <input type="number" min="0" max="23" class="uk-input uk-width-1-4" required
+                                    v-model="formModel.hours">
+                                <input type="number" min="0" max="59" class="uk-input uk-width-1-4" required
+                                    v-model="formModel.minutes">
                             </div>
                         </div>
 
                         <div class="uk-margin">
                             <label class="uk-form-label">Закончена</label>
                             <div class="uk-form-controls uk-form-controls-text">
-                                <label><input type="radio" class="uk-radio" name="finished" v-model="formModel.finished" :value="true"> Да</label>
+                                <label><input type="radio" class="uk-radio" name="finished" v-model="formModel.finished"
+                                        :value="true"> Да</label>
                                 <br>
-                                <label><input type="radio" class="uk-radio" name="finished" v-model="formModel.finished" :value="false"> Нет</label>
+                                <label><input type="radio" class="uk-radio" name="finished" v-model="formModel.finished"
+                                        :value="false"> Нет</label>
                             </div>
                         </div>
                     </div>
@@ -139,8 +151,10 @@
 
                 <div class="uk-modal-footer uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Отмена</button>
-                    <button class="uk-button uk-button-danger" type="button" v-if="isEditMode()" @click="removeTask()">Удалить</button>
-                    <button class="uk-button uk-button-primary" type="submit" :disabled="!$refs.form?.checkValidity()">Сохранить</button>
+                    <button class="uk-button uk-button-danger" type="button" v-if="isEditMode()"
+                        @click="removeTask()">Удалить</button>
+                    <button class="uk-button uk-button-primary" type="submit"
+                        :disabled="!$refs.form?.checkValidity()">Сохранить</button>
                 </div>
             </div>
         </form>
