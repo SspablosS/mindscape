@@ -31,11 +31,15 @@ body {
   background-color: #191919;
   color: #D4D4D4;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .container {
   display: flex;
-  min-height: 100vh;
+  flex: 1;
+  overflow: hidden;
 }
 
 .sidebar {
@@ -47,6 +51,7 @@ body {
   color: #9B9B9B;
   padding: 1.5vw;
   margin: 1vh;
+  overflow-y: auto;
 }
 
 .sidebar ul {
@@ -73,6 +78,8 @@ body {
   border-radius: 15px;
   background-color: #202020;
   position: relative;
+  overflow-y: hidden;
+  min-height: 80vh;
 }
 
 .tab-content {
