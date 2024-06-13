@@ -5,13 +5,29 @@
 }
 
 html,body {
-  height:1000px;
+  height:1300px;
     font-size: 100%;
     width: 100%;
   position: relative;
   overflow-x:hidden;
   background: #ccc;
 
+}
+.contactsP{
+  font-family: kronaone-c;
+  align-items: center;
+  right: 50%;
+  left:12%;
+  margin-top: 70px;
+  position: absolute;
+  font-size: 20px;
+}
+.contactsH{
+  font-family: kronaone-c;
+  align-items: center;
+  left:1%;
+  right: 40%;
+  position: absolute;
 }
 :root {
   --index: calc(1vw + 1vh);
@@ -187,6 +203,7 @@ body {
   width: 60%;
   height: 400px;
   object-fit: cover;
+  margin-left: 8vw;
 }
 
 .blueDots {
@@ -419,7 +436,6 @@ body {
     height: auto;
     width: 60%;
   }
-
   .responsive-container-block.textSide {
     margin-top: 0px;
     margin-right: 0px;

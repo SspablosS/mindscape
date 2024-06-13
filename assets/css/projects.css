@@ -4,15 +4,13 @@
     box-sizing: border-box;
   }
   html,body {
-    height:1000px;
+    height:1500px;
     font-size: 100%;
     width: 100%;
     position: relative;
     overflow-x:hidden;
     background: #ccc;
-    background-image: url('../../assets/images/bckgprojects.jpg');
-    background-size: 100vw 100%;
-    background-repeat:no-repeat;
+
   }
   :root {
     --index: calc(1vw + 1vh);
@@ -55,6 +53,22 @@
 
     padding: 3vh;
     color: #450D01;
+  }
+
+  .containerBig {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    margin-left: 10%;
+    grid-template-rows: 80px 80px;
+    margin-top: 7vh;
+    background-color: #e1d3c4;
+    margin-right: 37%;
+  }
+  .containerBig > h2{
+    margin-top: 55px;
+  }
+  .containerBig > h4{
+    margin-top: 7px;
   }
   
   .logo > a{
@@ -147,9 +161,9 @@
     display: flex;
   }
   .ideaText{
-    padding-right: 90vh;
+    padding-right: 90px;
     position: absolute;
-    margin-top: 40vh;
+    margin-top: 40px;
   }
   .footerbase{
      /* Позиционируем footer внизу main */
