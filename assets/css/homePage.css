@@ -111,6 +111,7 @@ body {
   position: absolute;
   margin-bottom: 40vh;
   margin-left: 10vh;
+
 }
 .calendar_button > button {
   font-family: kronaone-c;
@@ -128,6 +129,7 @@ body {
   margin-left: 10vh;
   width: 80vh;
 }
+
 .blank{
   height: 70vh;
   margin-top: 100px;
@@ -137,10 +139,11 @@ body {
 .flex{ 
   display: flex;
 }
-.ideaText{
-  padding-right: 90vh;
+.ideaText > p{
+  padding-right: 670px;
   position: absolute;
-  margin-top: 40vh;
+  padding-left: 20px;
+  top:900px;
 }
 .footerbase{
    /* Позиционируем footer внизу main */
