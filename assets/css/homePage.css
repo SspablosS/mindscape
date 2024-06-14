@@ -3,15 +3,18 @@
   margin: 0;
   box-sizing: border-box;
 }
-html,body {
-  height:1000px;
+
+html,
+body {
+  height: 100%;
   font-size: 100%;
   width: 100%;
   position: relative;
-  overflow-x:hidden;
+  overflow-x: hidden;
   background: #ccc;
 
 }
+
 :root {
   --index: calc(1vw + 1vh);
 }
@@ -19,6 +22,11 @@ html,body {
 @font-face {
   font-family: kronaone-c;
   src: url(../fonts/KronaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto-m;
+  src: url(../fonts/Roboto-Bold.ttf);
 }
 
 h1,
@@ -35,7 +43,7 @@ body {
   color: #450D01;
   font-family: kronaone-c;
   overflow: hidden;
-  
+
 }
 
 .home-page-header {
@@ -48,7 +56,7 @@ body {
   color: #450D01;
 }
 
-.logo > a{
+.logo>a {
   font-size: calc(var(--index) * 2);
   font-family: kronaone-c;
   margin-left: 3vw;
@@ -60,7 +68,7 @@ body {
   display: flex;
 }
 
-.menu-item > a {
+.menu-item>a {
   margin-right: 4vw;
   font-size: calc(var(--index) * 1);
   font-family: kronaone-c;
@@ -73,7 +81,7 @@ body {
   height: 800px;
   position: absolute;
   left: 55vw;
-  bottom: 5vh;
+  bottom: 0vh;
 }
 
 .main-header {
@@ -82,8 +90,6 @@ body {
 
 .container {
   padding: 0 4vw;
-  
-  
 }
 
 .tagline {
@@ -93,10 +99,9 @@ body {
   top: 20vh;
   left: 5vw;
   line-height: 1.2;
-  margin-left: 11vh;
 }
 
-.note_button > button {
+.note_button>button {
   font-family: kronaone-c;
   font-size: calc(var(--index) * 4);
   bottom: 3vh;
@@ -106,14 +111,15 @@ body {
   border-radius: 15vw;
   background-color: #0E81EA;
   color: white;
-  cursor: pointer; 
+  cursor: pointer;
   width: 80vh;
   position: absolute;
-  margin-bottom: 40vh;
+  margin-bottom: 37vh;
   margin-left: 10vh;
 
 }
-.calendar_button > button {
+
+.calendar_button>button {
   font-family: kronaone-c;
   font-size: calc(var(--index) * 4);
   bottom: 3vh;
@@ -123,35 +129,27 @@ body {
   border-radius: 15vw;
   background-color: #0E81EA;
   color: white;
-  cursor: pointer;  
+  cursor: pointer;
   position: absolute;
-  margin-bottom: 20vh;
+  margin-bottom: 17vh;
   margin-left: 10vh;
   width: 80vh;
 }
 
-.blank{
+.blank {
   height: 70vh;
   margin-top: 100px;
   position: absolute;
-
 }
-.flex{ 
+
+.flex {
   display: flex;
 }
-.ideaText > p{
-  padding-right: 670px;
+
+.ideaText>p {
+  font-size: calc(var(--index) * 0.8);
+  font-family: roboto-m;
+  width: 50vw;
   position: absolute;
-  padding-left: 20px;
-  top:900px;
-}
-.footerbase{
-   /* Позиционируем footer внизу main */
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   /* Высота footer */
-   height: 40px;
-   background: #2d2d2d;
-   padding-top: 40px;
+  bottom: 5vh;
 }

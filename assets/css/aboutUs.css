@@ -1,41 +1,54 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html,body {
-  height:1300px;
-    font-size: 100%;
-    width: 100%;
-  position: relative;
-  overflow-x:hidden;
-  background: #ccc;
 
 }
-.contactsP{
-  font-family: kronaone-c;
-  align-items: center;
-  right: 50%;
-  left:12%;
-  margin-top: 70px;
-  position: absolute;
-  font-size: 20px;
-}
-.contactsH{
-  font-family: kronaone-c;
-  align-items: center;
-  left:1%;
-  right: 40%;
-  position: absolute;
-}
+
 :root {
   --index: calc(1vw + 1vh);
+}
+
+html,
+body {
+  height: 1300px;
+  font-size: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background: #ccc;
+  overflow-y: hidden;
+
+}
+
+.contacts {
+  padding-top: 15vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 3vh 10%;
+}
+
+.contactsP,
+.contactsH {
+  font-family: roboto-m;
+  text-align: center;
+  position: static;
+  margin: 0;
 }
 
 @font-face {
   font-family: kronaone-c;
   src: url(../fonts/KronaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto-m;
+  src: url(../fonts/Roboto-Bold.ttf);
 }
 
 h1,
@@ -64,7 +77,7 @@ body {
   color: #450D01;
 }
 
-.logo > a{
+.logo>a {
   font-size: calc(var(--index) * 2);
   font-family: kronaone-c;
   margin-left: 3vw;
@@ -76,7 +89,7 @@ body {
   display: flex;
 }
 
-.menu-item > a {
+.menu-item>a {
   margin-right: 4vw;
   font-size: calc(var(--index) * 1);
   font-family: kronaone-c;
@@ -108,7 +121,7 @@ body {
   line-height: 1.2;
 }
 
-.note_button > button {
+.note_button>button {
   font-family: kronaone-c;
   font-size: calc(var(--index) * 4);
   position: absolute;
@@ -121,10 +134,12 @@ body {
   color: white;
   cursor: pointer;
 }
+
 .mainText {
-  padding-left: 40% ;
+  padding-left: 40%;
   padding-top: 20%;
 }
+
 * {
   font-family: Nunito, sans-serif;
 }
@@ -139,13 +154,6 @@ body {
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-}
-
-.responsive-cell-block {
-  min-height: 75px;
-}
-.mainresponsive-cell-block {
-  min-height: 75px;
 }
 
 .responsive-container-block {
@@ -163,23 +171,6 @@ body {
   margin-bottom: 0px;
   margin-left: auto;
   justify-content: flex-start;
-}
-.blank{
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  width: 100000px;
-}
-
-.responsive-container-block.bigContainer {
-  padding-top: 0px;
-  padding-right: 50px;
-  padding-bottom: 0px;
-  padding-left: 50px;
-  margin-top: 50px;
-  margin-right: 0px;
-  margin-bottom: 50px;
-  margin-left: 0px;
 }
 
 .responsive-container-block.Container {
@@ -254,7 +245,8 @@ body {
   width: 100px;
   height: 100px;
 }
-.maincardImgContainer{
+
+.maincardImgContainer {
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
@@ -285,6 +277,7 @@ body {
   margin-bottom: 0px;
   margin-left: 0px;
 }
+
 .cardImgContainer {
   padding-top: 5px;
   padding-right: 5px;
@@ -336,6 +329,7 @@ body {
   margin-bottom: 10px;
   margin-left: 0px;
 }
+
 .maintext-blk.cardHeading {
   font-size: 18px;
   line-height: 28px;
@@ -391,8 +385,6 @@ body {
   background-position-x: initial;
   background-position-y: initial;
   background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
@@ -436,6 +428,7 @@ body {
     height: auto;
     width: 60%;
   }
+
   .responsive-container-block.textSide {
     margin-top: 0px;
     margin-right: 0px;
@@ -658,6 +651,7 @@ body {
     padding-left: 0px;
   }
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
 
 *,
@@ -868,14 +862,4 @@ body {
   .wk-mobile-12 {
     width: 100%;
   }
-}
-.footerbase{
-  /* Позиционируем footer внизу main */
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Высота footer */
-  height: 40px;
-  background: #2d2d2d;
-  padding-top: 40px;
 }
