@@ -11,13 +11,12 @@
 
 html,
 body {
-  height: 1300px;
+  height: 120%;
   font-size: 100%;
   width: 100%;
   position: relative;
-  overflow-x: hidden;
   background: #ccc;
-  overflow-y: hidden;
+  overflow-x: hidden;
 
 }
 
@@ -64,7 +63,9 @@ body {
   background-color: #FFEFDF;
   color: #450D01;
   font-family: kronaone-c;
-  overflow: hidden;
+
+  margin: 0;
+  
 }
 
 .home-page-header {
@@ -244,44 +245,15 @@ body {
 .cardImg {
   width: 100px;
   height: 100px;
+  border-radius: 10px;
 }
 
-.maincardImgContainer {
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-top-color: rgb(229, 229, 229);
-  border-right-color: rgb(229, 229, 229);
-  border-bottom-color: rgb(229, 229, 229);
-  border-left-color: rgb(229, 229, 229);
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin-top: 0px;
-  margin-right: 10px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-}
+
 
 .cardImgContainer {
   padding-top: 5px;
   padding-right: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
   padding-left: 5px;
   border-top-width: 1px;
   border-right-width: 1px;
@@ -291,10 +263,10 @@ body {
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  border-top-color: rgb(229, 229, 229);
-  border-right-color: rgb(229, 229, 229);
-  border-bottom-color: rgb(229, 229, 229);
-  border-left-color: rgb(229, 229, 229);
+  border-top-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
   border-image-source: initial;
   border-image-slice: initial;
   border-image-width: initial;
@@ -509,19 +481,19 @@ body {
     width: 100%;
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-left: 0px;
   }
 
   .imgContainer {
-    width: 90%;
+    width: 100%;
   }
 
   .imgContainer {
     height: 450px;
     margin-top: 5px;
     margin-right: 33.9062px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-left: 33.9062px;
   }
 
@@ -660,10 +632,6 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
 }
 
 .wk-desk-1 {
