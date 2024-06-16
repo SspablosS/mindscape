@@ -16,12 +16,12 @@ body {
   width: 100%;
   position: relative;
   background: #ccc;
-  overflow-x: hidden;
+  overflow: hidden;
 
 }
 
 .contacts {
-  padding-top: 15vh;
+  padding-top: 8vh;
   padding-right: 2vw;
   padding-left: 2vw;
   display: flex;
@@ -65,7 +65,7 @@ body {
   font-family: kronaone-c;
 
   margin: 0;
-  
+
 }
 
 .home-page-header {

@@ -10,7 +10,7 @@ body {
   font-size: 100%;
   width: 100%;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   background: #ccc;
 }
 
@@ -40,7 +40,6 @@ body {
   background-color: #FFEFDF;
   color: #450D01;
   font-family: kronaone-c;
-  overflow: hidden;
 }
 
 .home-page-header {
@@ -79,8 +78,8 @@ body {
 }
 
 .main-image {
-  height: 300px;
-  width: 300px;
+  height: calc(var(--index) * 11);
+  width: calc(var(--index) * 11);
   margin-right: 3vw;
 }
 

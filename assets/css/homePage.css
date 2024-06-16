@@ -6,7 +6,7 @@
 
 html,
 body {
-  height: 115%;
+  height: 100%;
   font-size: 100%;
   width: 100%;
   position: relative;
@@ -77,8 +77,8 @@ body {
 }
 
 .hero {
-  width: 800px;
-  height: 800px;
+  width: calc(var(--index) * 28);
+  height: calc(var(--index) * 28);
   position: absolute;
   left: 55vw;
   bottom: 0vh;
@@ -93,7 +93,7 @@ body {
 }
 
 .tagline {
-  font-size: 80px;
+  font-size: calc(var(--index) * 2.7);
   position: absolute;
   width: 120vh;
   top: 20vh;
@@ -112,7 +112,7 @@ body {
   background-color: #0E81EA;
   color: white;
   cursor: pointer;
-  width: 80vh;
+  width: calc(var(--index) * 27);
   position: absolute;
   margin-bottom: 37vh;
   margin-left: 10vh;
@@ -133,14 +133,17 @@ body {
   position: absolute;
   margin-bottom: 17vh;
   margin-left: 10vh;
-  width: 80vh;
+  width: calc(var(--index) * 27);
 }
-.calendar_button :hover{
+
+.calendar_button :hover {
   background-color: #0c69c0;
 }
-.note_button :hover{
+
+.note_button :hover {
   background-color: #0c69c0;
 }
+
 .blank {
   height: 70vh;
   margin-top: 100px;
