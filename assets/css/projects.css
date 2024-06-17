@@ -85,7 +85,7 @@ body {
 
 .welcome-text {
   text-align: justify;
-  font-size: calc(var(--index) * 0.6);
+  font-size: calc(var(--index) * 1);
   font-family: roboto-m;
   flex-grow: 1;
 }
@@ -94,26 +94,26 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2vw;
-  margin: 3vh 10%;
+  margin: 4vh 10%;
 }
 
 .card {
   width: 41vw;
-  height: 21vh;
+  height: 39vh;
   background-color: #e1d3c4;
-  padding: 2vh;
-  border-radius: 10px;
+  padding: 6vh;
+  border-radius: calc(var(--index) * 2);
 }
 
 .card h2 {
-  font-size: calc(var(--index) * 1);
+  font-size: calc(var(--index) * 1.35);
   font-family: roboto-m;
   text-align: center;
 }
 
 .card h4 {
   text-align: justify;
-  font-size: calc(var(--index) * 0.6);
+  font-size: calc(var(--index) * 1);
   font-family: roboto-m;
   margin-top: 1vh;
 }

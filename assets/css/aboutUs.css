@@ -28,16 +28,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   margin: 3vh 10%;
 }
 
 .contactsP,
 .contactsH {
   font-family: roboto-m;
-  text-align: center;
   position: static;
   margin: 0;
+  line-height: 2.2vh;
+}
+
+.contactsP {
+  font-size: calc(var(--index) * 0.7);
+  text-align: justify;
+}
+
+.contactsH {
+  font-size: calc(var(--index) * 1.3);
+  line-height: 7vh;
 }
 
 @font-face {
