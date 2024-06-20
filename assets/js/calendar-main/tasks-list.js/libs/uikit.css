@@ -35,7 +35,6 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden;
-
 }
 
 /* Links
@@ -14301,12 +14300,10 @@ iframe.uk-cover {
 }
 
 .home-page-header {
-  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 5vh;
+  padding: 3vh;
   color: #450D01;
 
 }

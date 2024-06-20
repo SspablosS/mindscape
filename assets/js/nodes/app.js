@@ -138,7 +138,7 @@ const searchNotes = () => {
       tabItems.forEach((tabItem, index) => {
         const note = notes[index];
         const textarea = note.querySelector('textarea');
-        if (textarea.value.includes(searchTerm)) {
+        if (textarea.value.toLowerCase().includes(searchTerm)) {
           tabItem.classList.add('highlight');
           found = true;
         } else {
