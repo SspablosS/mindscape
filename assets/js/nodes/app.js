@@ -52,7 +52,7 @@ const addNote = async () => {
 
     tabsContainer.appendChild(newNoteTab);
 
-    // Сохраняем название заметки
+    
     localStorage.setItem('noteTitle' + newTabIndex, newNoteTabTitle);
 
     const newNoteContent = document.createElement('div');
@@ -70,7 +70,7 @@ const addNote = async () => {
     newNoteContent.appendChild(textarea);
     contentContainer.appendChild(newNoteContent);
 
-    // Удаление выделения со всех вкладок и переключение на новую вкладку
+    
     changeTab(newTabIndex);
   }
 };
@@ -87,22 +87,22 @@ const deleteNote = (tabIndex) => {
     cancelButtonText: 'Отмена'
   }).then((result) => {
     if (result.isConfirmed) {
-      // Удаляем заметку из DOM
+      
       const tabToDelete = document.getElementById('tab' + tabIndex);
       const contentToDelete = document.getElementById('tab' + tabIndex + 'Content');
       tabToDelete.parentNode.removeChild(tabToDelete);
       contentToDelete.parentNode.removeChild(contentToDelete);
 
-      // Удаляем заметку из localStorage
+      
       localStorage.removeItem('noteTitle' + tabIndex);
       localStorage.removeItem('note' + tabIndex);
 
-      // Обновляем индексы оставшихся заметок
+      
       const tabs = document.querySelectorAll('.sidebar ul li');
       tabs.forEach((tab, index) => {
         tab.id = 'tab' + index;
         tab.setAttribute('onclick', `changeTab(${index})`);
-        localStorage.setItem('noteTitle' + index, tab.textContent.slice(0, -1)); // Удаляем последний символ, который является кнопкой удаления
+        localStorage.setItem('noteTitle' + index, tab.textContent.slice(0, -1)); 
 
         const content = document.getElementById('tab' + index + 'Content');
         content.id = 'tab' + index + 'Content';
@@ -160,7 +160,7 @@ const removeHighlightOnTabClick = () => {
       tabItem.addEventListener('click', () => {
         tabItem.classList.remove('highlight');
       });
-      tabItem.hasHighlightListener = true; // Флаг, указывающий на наличие обработчика
+      tabItem.hasHighlightListener = true;
     }
   });
 };

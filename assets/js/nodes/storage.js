@@ -22,7 +22,7 @@ const loadNotes = () => {
     deleteButton.textContent = 'x';
     deleteButton.classList.add('delete-note-button');
     deleteButton.addEventListener('click', (event) => {
-      event.stopPropagation(); // предотвращает переключение вкладки при нажатии на кнопку удаления
+      event.stopPropagation(); 
       deleteNote(i);
     });
     newNoteTab.appendChild(deleteButton);
